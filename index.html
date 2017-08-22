@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <!-- Main CSS  -->
+    <link rel="stylesheet" href="css/main.css">
+    <!-- Font Awesome Icons -->
+    <script src="https://use.fontawesome.com/b420e0814b.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <!-- META VIEWPORT -->
+    <meta name="viewport" content="width=device-width,initial=1.0">
+    <meta charset="utf-8">
+    <script src="js/angular.min.js"></script>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="header">
+            <h1>Test Your Knowledge</h1>
+        </div>
+    </div>
+
+    <div class="container">
+
+        <div>
+            <h3 id="question0">What is the World's Biggest Island?</h3>
+            <input type="text" class="form-control input-sm" id="answer0" autofocus placeholder="Answer">
+        </div>
+
+        <div>
+            <h3 id="question1">What is the World's Longest River?</h3>
+            <input type="text" class="form-control input-sm" id="answer1" autofocus placeholder="Answer">
+        </div>
+
+        <div>
+            <h3 id="question2">What is the World's Largest Ocean</h3>
+            <input type="text" class="form-control input-sm" id="answer2" autofocus placeholder="Answer">
+        </div>
+
+        <div>
+            <h3 id="question3">What is the Diameter of Earth</h3>
+            <input type="text" class="form-control input-sm" id="answer3" autofocus placeholder="Answer">
+        </div>
+
+        <div>
+            <h3 id="question4">Which Country is Prague In?</h3>
+            <input type="text" class="form-control input-sm" id="answer4" autofocus placeholder="Answer">
+        </div>
+
+        <div class="container-button">
+            <button class="btn btn-primary btn-md" id="btn" onclick="results()" type="button" name="button">Submit Answers</button>
+        </div>
+
+        <div>
+          <h3 class="correct">Correct: <span id="correct"></span></h3>
+          <h3 class="incorrect">Incorrect: <span id="incorrect"></span></h3>
+        </div>
+        
+    </div>
+
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <!-- Main JS -->
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

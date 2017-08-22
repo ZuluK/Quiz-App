@@ -1,0 +1,27 @@
+body {
+  background: url('../img/coolearth.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+
+div.header {
+  text-align: center;
+}
+div h1 {
+  color: white;
+}
+div h3 {
+  color: white;
+}
+.container-button {
+  text-align: center;
+}
+.correct {
+  color:green;
+}
+.incorrect {
+  color: red;
+}
