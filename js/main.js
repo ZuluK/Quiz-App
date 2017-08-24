@@ -26,25 +26,23 @@ var quiz = [
 for(var i = 0; i < quiz.length; i++) {
 //stores question value from quiz array
   var questions = quiz[i].question;
-//stores element
+//stores element from html with id of question + [i]
   var element = document.getElementById('question' + [i]);
 //logs what question and element is being selected
-  console.log(questions, element.textContent);
-//updates text content of each element
-  element.textContent = questions;
+  console.log(questions, element);
 }
 //checks the results when the user submits quiz
 function results() {
   var correct = 0;
   var incorrect = 0;
 
-//loop through questions array
+//loop through questions array. Why two for loops? why not just use one?
   for(var i = 0; i < quiz.length; i++) {
 //variable that stores each correct answer
     var answer = quiz[i].answer;
 //variable that stores each user answer
     var response = document.getElementById('answer' + [i]).value;
-//varibale that store element to add class if correct or incorrect
+//variable that stores element to add class if correct or incorrect
     var correctOrIn = document.getElementById('question' + [i]);
 //checks if the user answer matches the correct answer
     if(answer == response) {
