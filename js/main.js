@@ -6,7 +6,7 @@ var quiz = [
   },
   {
     question: "What is the World's Longest River",
-    answer: "amazon river"
+    answer: "amazon"
   },
   {
     question: "What is the World's Largest Ocean",
@@ -41,11 +41,12 @@ function results() {
 //variable that stores each correct answer
     var answer = quiz[i].answer;
 //variable that stores each user answer
-    var response = document.getElementById('answer' + [i]).value;
+    var response = document.getElementById('answer' + i).value;
 //variable that stores element to add class if correct or incorrect
-    var correctOrIn = document.getElementById('question' + [i]);
+    var correctOrIn = document.getElementById('question' + i);
 //checks if the user answer matches the correct answer
-    if(answer == response) {
+  // console.log(answer, response.toLowerCase());
+    if(answer == response.toLowerCase()) {
 //updates class on correctOrIn
       correctOrIn.className = "correct";
 //increases by one for correct answer
